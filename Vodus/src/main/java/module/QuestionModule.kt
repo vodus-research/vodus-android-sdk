@@ -28,7 +28,7 @@ class QuestionModule {
             Log.d(Tag,"getCC() width: ${request.containerWidth}")
             Log.d(Tag, "getCC() height: $height")
 
-            val params = "&containerWidth=${request.containerWidth}&containerHeight=$height&deviceId=${request.deviceId}&containerBackgroundColor=${request.containerBackgroundColor.replace("#","")}"
+            val params = "&containerWidth=${request.containerWidth}&containerHeight=$height&deviceId=${request.deviceId}&partnerCode=${request.partnerCode}&containerBackgroundColor=${request.containerBackgroundColor.replace("#","")}"
 
             webView.loadUrl("https://api.vodus.com/sdk/v1/index.html?$params")
             Log.d(Tag, "Request url: https://api.vodus.com/sdk/v1/index.html?$params")
