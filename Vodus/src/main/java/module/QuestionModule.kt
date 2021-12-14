@@ -22,13 +22,13 @@ class QuestionModule {
         const val Tag = "Vodus"
 
         fun getCC(context: Context, request: GetQuestionRequest):GetQuestionResponse  {
-            val webView = WebView(context)
+            val webView = WebView(context)0
             val height = (request.containerWidth * 1.2).toInt()
 
             Log.d(Tag,"getCC() width: ${request.containerWidth}")
             Log.d(Tag, "getCC() height: $height")
 
-            val params = "&containerWidth=${request.containerWidth}&containerHeight=$height&deviceId=${request.deviceId}&partnerCode=${request.partnerCode}&containerBackgroundColor=${request.containerBackgroundColor.replace("#","")}"
+            val params = "&containerWidth=${request.containerWidth}&containerHeight=$height&deviceId=${request.deviceId}&deviceOS=1&partnerCode=${request.partnerCode}&containerBackgroundColor=${request.containerBackgroundColor.replace("#","")}"
 
             webView.loadUrl("https://api.vodus.com/sdk/v1/index.html?$params")
             Log.d(Tag, "Request url: https://api.vodus.com/sdk/v1/index.html?$params")
