@@ -54,7 +54,7 @@ try {
 <<PARTNER_CODE>>
 `Partner provided by Vodus`
 
-<<env>>
+<<ENV>>
 `This is the environment to connect to`
 - SANDBOX
 - LIVE
