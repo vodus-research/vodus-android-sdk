@@ -24,9 +24,9 @@ try {
 	    var result = QuestionModule.getCC(applicationContext,GetQuestionRequest(
             containerWidth = <<CONTAINER_WIDTH>>,
             deviceId = <<DEVICE_ID>>,
-            containerBackgroundColor = "<<BACKGROUND_COLOR>>",
-            partnerCode = "<<PARTNER_CODE>>,
-            env = "<<ENV>>")
+            containerBackgroundColor = <<BACKGROUND_COLOR>>,
+            partnerCode = <<PARTNER_CODE>>,
+            env = <<ENV>>)
         );
 
         if(result.isAvailable)
