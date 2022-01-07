@@ -28,7 +28,14 @@ class QuestionModule {
             Log.d(Tag,"getCC() width: ${request.containerWidth}")
             Log.d(Tag, "getCC() height: $height")
 
-            if(request.containerWidth <=0)
+            if(request.partnerCode == "")
+            {
+                val error = "Partner code is required"
+                Log.d(Tag, error)
+                return GetQuestionResponse(isAvailable = false, surveyWebView = webView, message = error)
+            }
+
+            if(request.containerWidth <= 0)
             {
                 val error = "Invalid container width: ${request.containerWidth}. Container width must be more than 0"
                 Log.d(Tag, error)
