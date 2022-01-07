@@ -28,8 +28,9 @@ class MainActivity : AppCompatActivity() {
         var result = QuestionModule.getCC(applicationContext,GetQuestionRequest(
             containerWidth = w,
             deviceId = deviceID,
-            containerBackgroundColor = "ddd",
-            partnerCode = "")
+            containerBackgroundColor = "dddddd",
+            partnerCode = "b9026e15-367d-463f-9628-1f6f9807f616",
+            env = "LIVE")
         );
 
         if(result.isAvailable)

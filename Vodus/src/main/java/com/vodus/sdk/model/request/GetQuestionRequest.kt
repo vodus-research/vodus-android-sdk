@@ -16,5 +16,6 @@ data class GetQuestionRequest(
     val partnerCode: String,
     val deviceId: String,
     val containerWidth: Int,
-    val containerBackgroundColor: String
+    val containerBackgroundColor: String,
+    val env:String
 )

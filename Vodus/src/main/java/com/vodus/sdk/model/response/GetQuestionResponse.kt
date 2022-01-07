@@ -7,5 +7,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class GetQuestionResponse(
     val surveyWebView: WebView?,
-    val isAvailable: Boolean
+    val isAvailable: Boolean,
+    val message: String
 )
